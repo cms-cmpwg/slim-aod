@@ -227,15 +227,13 @@ process.source = cms.Source("PoolSource",
 'keep recoVertexCompositePtrCandidates_inclusiveCandidateSecondaryVertices__RECO',
 'keep recoVertexCompositePtrCandidates_inclusiveCandidateSecondaryVerticesCvsL__RECO',
 'keep triggerTriggerEvent_hltTriggerSummaryAOD__HLT',
-'keep *'
     ),
  dropDescendantsOfDroppedBranches=cms.untracked.bool(False)
 )
 
 
 process.output = cms.OutputModule("PoolOutputModule",
-#       fileName = cms.untracked.string('slimAOD.root')
-       fileName = cms.untracked.string('allAOD.root')
+       fileName = cms.untracked.string('slimAOD.root')
 )
 
 

@@ -51,9 +51,9 @@ def analyzeResults():
   nbranches = branches.GetEntries()
   njob=-1
 
-  #print "'drop *',"
+  print "'drop *',"
 
-  print "'keep *',"
+  #print "'keep *',"
 
   for i in xrange(nbranches):
     name = branches.At(i).GetName().replace(".","")
@@ -62,11 +62,11 @@ def analyzeResults():
 
     status, output = commands.getstatusoutput("grep \"Begin Fatal\" "+opt.TASKNAME+"/*."+str(njob)+".err")
 
-    #if (output==""): continue
-    #print "'keep "+name+"',"
+    if (output==""): continue
+    print "'keep "+name+"',"
       
-    if (output==""): 
-      print "'drop "+name+"',"
+    #if (output==""): 
+    #  print "'drop "+name+"',"
       
 if __name__ == "__main__":
   analyzeResults()

@@ -28,8 +28,8 @@ process.maxEvents = cms.untracked.PSet(
 
 # Input source
 process.source = cms.Source("PoolSource",
-    #fileNames = cms.untracked.vstring('file:/eos/cms/store/mc/RunIISummer19UL18RECO/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/AODSIM/106X_upgrade2018_realistic_v11_L1v1-v2/70000/01131E1D-6292-B746-BA60-5D490F310A14.root'),
-    fileNames = cms.untracked.vstring('file:slimAOD.root'),
+    fileNames = cms.untracked.vstring('file:/eos/cms/store/mc/RunIISummer19UL18RECO/TTJets_TuneCP5_13TeV-amcatnloFXFX-pythia8/AODSIM/106X_upgrade2018_realistic_v11_L1v1-v2/70000/01131E1D-6292-B746-BA60-5D490F310A14.root'),
+    #fileNames = cms.untracked.vstring('file:slimAOD.root'),
     secondaryFileNames = cms.untracked.vstring()
 )
 
