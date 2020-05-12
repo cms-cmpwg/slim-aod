@@ -61,7 +61,7 @@ def find_files(directory, pattern):
         filename = os.path.join(root, basename)
         yield filename
 
-def submitFillTree():
+def submitJobs():
 
   global opt, args
   parseOptions()
@@ -122,4 +122,4 @@ def submitFillTree():
       
       
 if __name__ == "__main__":
-  submitFillTree()
+  submitJobs()
